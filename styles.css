@@ -1,0 +1,267 @@
+body {
+    font-family: "Bai Jamjuree";
+    margin: 0;
+}
+p {
+    color: hsl(210, 10%, 33%);
+}
+.first-page {
+    height: 80vh;
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.first-page h1 {
+    font-size: 3.5em;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.first-page p{
+    font-size: 1.25rem;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+}
+.CTA-buttons {
+    display: flex;
+    gap: 1.25rem;
+}
+.ios-button, .mac-button {
+    padding: 20px 35px;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    margin-top: 30px;
+    font-size: 1.25rem;
+    font-family: "Bai Jamjuree";
+    font-weight: 600;
+    cursor: pointer;
+}
+.ios-button {
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 0 5px 20px hsl(203, 8%, 69%);
+}
+.ios-button:hover, .mac-button:hover {
+    opacity: 0.8;
+}
+.mac-button {
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 0 5px 20px hsl(203, 8%, 69%);
+}
+/* End of a section */
+.subheading {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+.subheading h2 {
+    font-size: 40px;
+}
+.paragraph {
+    font-size: 23px;
+    margin: 0 350px;
+    line-height: 1.5;
+}
+/* End of a section */
+.desktop {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.desktop-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.desktop-right-item {
+    width: 75%;
+}
+.desktop-right-item h3 {
+    font-size: 25px;
+}
+/* End of a section */
+.big-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.workflow {
+    margin-bottom: 60px;
+}
+/* End of a section */
+.blacklist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 20px 50px 20px;
+    padding-bottom: 70px;
+    gap: 30px; 
+}
+ .blacklist-item {
+    width: 20%;
+    text-align: center;
+    height: 120px;
+} 
+/* End of a section */
+.logo-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 350px;
+}
+    /* End of a section */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* End of a section */
+.footer-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 150px;
+    gap: 100px;
+    height: fit-content;
+    background-color: hsl(0, 0%, 95%);
+}
+.footer-div a {
+    color: hsl(210, 10%, 33%);
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px;
+}
+.footer-div a:hover {
+    color: hsl(171, 66%, 44%);
+}
+.left-middle {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.left img {
+    width: 65px;
+    margin-right: 20px;
+}
+.middle-item {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.right img:hover {
+    fill: hsl(171, 66%, 44%);
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+
+/* Responsiveness  */
+@media (min-width: 250px) and (max-width: 800px) {
+    .first-page {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+    }
+    .first-page h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .paragraph {
+        margin: 0;
+    }
+    .CTA-buttons {
+        flex-direction: column;
+        width: 80%;
+        gap: 0;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .ios-button,
+    .mac-button {
+        margin: 10px;
+        padding: 15px 20px;
+    }
+    .desktop {
+        flex-direction: column;
+    }
+    .desktop img {
+        width: 90%;
+    }
+    .desktop-right {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        padding: 0 20px;
+    }
+    .desktop-right-item {
+        width: 100%;
+    }
+    .big-image img {
+        width: 100%;
+    }
+    .blacklist {
+        flex-direction: column;
+        margin: 30px;
+        margin-bottom: 0;
+    }
+    .blacklist-item {
+        height: auto;
+        width: 90%;
+    }
+    .logo-part {
+        flex-direction: column;
+        gap: 60px;
+        margin-bottom: 150px;
+    }
+    .subheading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footer-div {
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0;
+        padding: 30px;
+    }
+    .left-middle {
+        flex-direction: column;
+        width: 100%;
+    }
+    .left {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .middle-item {
+        text-align: center;
+        width: 100%;
+    }
+}
+/* @media (max-width: 370px) {
+    .footer-div {
+    }
+} */
